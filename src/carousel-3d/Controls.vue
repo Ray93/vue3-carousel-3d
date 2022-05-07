@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'controls',
+  name: 'Controls',
   props: {
     /**
      * Width in pixels of the navigation buttons

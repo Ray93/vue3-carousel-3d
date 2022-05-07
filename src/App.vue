@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="wrapper">
+  <div class="wrapper">
     <!-- ----------------------------------------------------------------------------------------------------- -->
     <div class="box">
       <h3>Default</h3>
@@ -151,7 +151,7 @@
       <h3>Scoped Slot</h3>
       <carousel-3d>
         <slide v-for="(slide, i) in slides" :index="i" :key="i">
-          <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
+          <template #default="{ index, isCurrent, leftIndex, rightIndex }">
             <div :style="{ textAlign: leftIndex >= 0 ? 'right' : 'left' }">
               right {{ rightIndex }} <br>
               left {{ leftIndex }}
@@ -165,8 +165,8 @@
 </template>
 
 <script>
-import Carousel3d from "@/carousel-3d/Carousel3d";
-import Slide from "@/carousel-3d/Slide";
+import Carousel3d from "@/carousel-3d/Carousel3d.vue";
+import Slide from "@/carousel-3d/Slide.vue";
 
 const slides = [
   {
@@ -261,7 +261,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

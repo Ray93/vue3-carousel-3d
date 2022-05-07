@@ -28,7 +28,7 @@ const autoplay = {
         }
     },
     destroyed () {
-        if (!process.server) {
+        if (!this.process_server) {
             this.pauseAutoplay()
 
             this.$el.removeEventListener('mouseenter', this.pauseAutoplay)
@@ -50,7 +50,7 @@ const autoplay = {
         }
     },
     mounted () {
-        if (!process.server && this.autoplayHoverPause) {
+        if (!this.process_server && this.autoplayHoverPause) {
             this.$el.addEventListener('mouseenter', this.pauseAutoplay)
             this.$el.addEventListener('mouseleave', this.startAutoplay)
 
