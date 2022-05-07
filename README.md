@@ -1,4 +1,6 @@
 # Vue3 Carousel 3d
+[![NPM downloads](https://img.shields.io/npm/dm/vue3-carousel-3d.svg)](https://npmjs.com/package/vue3-carousel-3d)
+[![Latest Stable Version](https://img.shields.io/npm/v/vue3-carousel-3d.svg)](https://www.npmjs.com/package/vue3-carousel-3d)
 
 The repository is back in action. I'll try to keep it updated and to merge pull requests occasionally. Also, some new features are coming soon.
 
@@ -17,7 +19,7 @@ The repository is back in action. I'll try to keep it updated and to merge pull 
 ## Installation
 
 ``` bash
-npm install -S vue-carousel-3d
+yarn add vue3-carousel-3d
 ```
 
 ## Usage
@@ -28,7 +30,8 @@ You may install Vue Carousel 3d globally:
 
 ``` js
 import Vue from 'vue';
-import Carousel3d from 'vue-carousel-3d';
+import Carousel3d from 'vue3-carousel-3d';
+import "vue3-carousel-3d/dist/index.css"
 
 Vue.use(Carousel3d);
 ```
@@ -38,17 +41,17 @@ This will make **&lt;carousel-3d&gt;** and **&lt;slide&gt;** available to all co
 
 Include the Carousel 3d into your component using import:
 
-``` js
-import { Carousel3d, Slide } from 'vue-carousel-3d';
+```js
+<template>
+  <carousel-3d>
+    <slide :index="0">
+      Content
+    </slide>
+  </carousel-3d>
+</template>
 
-export default {
-  ...
-  components: {
-    Carousel3d,
-    Slide
-  }
-  ...
-};
+import { Carousel3d, Slide } from 'vue3-carousel-3d';
+
 ```
 
 ## HTML Structure
