@@ -19,6 +19,8 @@ The repository is back in action. I'll try to keep it updated and to merge pull 
 ## Installation
 
 ``` bash
+npm install vue3-carousel-3d
+# or
 yarn add vue3-carousel-3d
 ```
 
@@ -76,6 +78,6 @@ Keep in mind that **index** property on slide component is required property and
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Changelog
-####Version 1.0.2
+####Version 1.0.3
 
 - modify for vue3 version
