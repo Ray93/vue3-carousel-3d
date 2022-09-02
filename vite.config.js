@@ -17,5 +17,17 @@ export default defineConfig({
       fileName: (format) => `carousel-3d.${format}.js`,
     },
     sourcemap: true,
+    rollupOptions: {
+      external: ["vue"],
+      output: {
+        globals: {
+          vue: "Vue",
+        },
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name == "style.css") return "index.css";
+          return assetInfo.name;
+        },
+      },
+    },
   },
 });
