@@ -1,6 +1,6 @@
 {
   "name": "vue3-carousel-3d",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Beautiful, flexible and touch supported 3D Carousel for Vue.js",
   "main": "./dist/carousel-3d.es.js",
   "scripts": {
@@ -18,17 +18,17 @@
     "carousel 3d",
     "slider"
   ],
-  "author": "Vladimir Bujanovic Ray93",
+  "author": "Vladimir Bujanovic & Ray93",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Ray93/vue3-carousel-3d/issues"
   },
   "homepage": "https://github.com/Ray93/vue3-carousel-3d#readme",
   "dependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.2.38"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.1",
-    "vite": "^2.9.7"
+    "@vitejs/plugin-vue": "^3.0.3",
+    "vite": "^3.0.9"
   }
 }
